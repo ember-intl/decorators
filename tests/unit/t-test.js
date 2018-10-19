@@ -4,7 +4,7 @@ import { setupTest } from 'ember-qunit';
 import EmberObject, { get, set } from '@ember/object';
 import { run } from '@ember/runloop';
 import { setupIntl, addTranslations } from 'ember-intl/test-support';
-import { t } from 'ember-intl-decorators';
+import { t } from '@ember-intl/decorators';
 
 module('Unit | @t', function(hooks) {
   setupTest(hooks);
