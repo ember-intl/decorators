@@ -1,11 +1,11 @@
 {
-  "name": "ember-intl-decorators",
+  "name": "@ember-intl/decorators",
   "version": "0.0.1",
   "description": "Decorators for using ember-intl with ES6 class syntax",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "ember-intl/ember-intl-decorators",
+  "repository": "ember-intl/decorators",
   "license": "MIT",
   "author": "",
   "directories": {
