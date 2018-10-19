@@ -21,13 +21,16 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "@ember-decorators/object": "^2.2.0",
+    "@ember-decorators/object": "^3.0.0",
     "ember-cli-babel": "^7.1.2",
     "ember-intl": "^3.3.0"
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "^2.0.0",
     "@ember/optional-features": "^0.7.0",
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/npm": "^5.0.5",
+    "@semantic-release/release-notes-generator": "^7.1.1",
     "babel-eslint": "^10.0.1",
     "broccoli-asset-rev": "^3.0.0",
     "ember-ajax": "^3.1.0",
@@ -42,7 +45,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-qunit": "^3.4.1",
+    "ember-qunit": "^3.5.3",
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.5.0",
     "ember-source-channel-url": "^1.1.0",
@@ -55,7 +58,8 @@
     "eslint-plugin-prettier": "^3.0.0",
     "loader.js": "^4.7.0",
     "prettier": "^1.14.3",
-    "qunit-dom": "^0.8.0"
+    "qunit-dom": "^0.8.0",
+    "semantic-release": "^15.10.3"
   },
   "engines": {
     "node": "6.* || 8.* || >= 10.*"
