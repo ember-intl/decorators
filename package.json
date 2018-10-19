@@ -29,6 +29,7 @@
     "@ember-decorators/babel-transforms": "^2.0.0",
     "@ember/optional-features": "^0.7.0",
     "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.5",
     "@semantic-release/npm": "^5.0.5",
     "@semantic-release/release-notes-generator": "^7.1.1",
     "babel-eslint": "^10.0.1",
