@@ -1,7 +1,7 @@
 import { setOwner } from '@ember/application';
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import EmberObject, { set } from '@ember/object';
+import EmberObject, { get, set } from '@ember/object';
 import { run } from '@ember/runloop';
 import { setupIntl, addTranslations } from 'ember-intl/test-support';
 import { t } from 'ember-intl-decorators';
@@ -28,7 +28,7 @@ module('Unit | @t', function(hooks) {
       property;
     }();
 
-    assert.strictEqual(object.property, 'text with no interpolations');
+    assert.strictEqual(get(object, 'property'), 'text with no interpolations');
   });
 
   test('defines a computed property that translates with interpolations', function(assert) {
@@ -39,7 +39,7 @@ module('Unit | @t', function(hooks) {
       property;
     }();
 
-    assert.strictEqual(object.property, 'Clicks: 9');
+    assert.strictEqual(get(object, 'property'), 'Clicks: 9');
   });
 
   test('defines a computed property with dependencies', function(assert) {
@@ -51,7 +51,7 @@ module('Unit | @t', function(hooks) {
     }();
 
     run(() => set(object, 'numberOfClicks', 13));
-    assert.strictEqual(object.property, 'Clicks: 13');
+    assert.strictEqual(get(object, 'property'), 'Clicks: 13');
   });
 
   test('defines a computed property that depends on the locale', function(assert) {
@@ -64,10 +64,10 @@ module('Unit | @t', function(hooks) {
       property;
     }();
 
-    assert.strictEqual(object.property, 'text with no interpolations');
+    assert.strictEqual(get(object, 'property'), 'text with no interpolations');
     run(() => this.intl.setLocale('es'));
 
-    assert.strictEqual(object.property, 'texto sin interpolaciones');
+    assert.strictEqual(get(object, 'property'), 'texto sin interpolaciones');
   });
 
   test('looks up the intl service through the owner, if it not injected', function(assert) {
@@ -83,6 +83,6 @@ module('Unit | @t', function(hooks) {
       }
     });
 
-    assert.strictEqual(object.property, 'text with no interpolations');
+    assert.strictEqual(get(object, 'property'), 'text with no interpolations');
   });
 });
