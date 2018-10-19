@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "ember build",
-    "lint:hbs": "ember-template-lint .",
+    "lint:hbs": "ember-template-lint **/*.hbs",
     "lint:js": "eslint .",
     "start": "ember serve",
     "test": "ember test",
@@ -46,7 +46,7 @@
     "ember-resolver": "^5.0.1",
     "ember-source": "~3.5.0",
     "ember-source-channel-url": "^1.1.0",
-    "ember-template-lint": "^0.8.23",
+    "ember-template-lint": "^1.0.0-beta.6",
     "ember-try": "^1.0.0",
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
