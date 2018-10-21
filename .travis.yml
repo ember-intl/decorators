@@ -3,7 +3,7 @@ language: node_js
 node_js:
   # we recommend testing addons with the same minimum supported node version as Ember CLI
   # so that your addon works for all apps
-  - "6"
+  - "8"
 
 sudo: false
 dist: trusty
@@ -49,6 +49,11 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-beta
     - env: EMBER_TRY_SCENARIO=ember-canary
     - env: EMBER_TRY_SCENARIO=ember-default-with-jquery
+
+    - stage: deploy
+      name: "Release on npm & tag on GitHub"
+      script:
+        - yarn run semantic-release
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
