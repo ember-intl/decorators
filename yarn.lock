@@ -4474,10 +4474,10 @@ ember-export-application-global@^2.0.0:
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
 
-ember-intl@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-3.3.0.tgz#fd70860290fd465c3a324d96e6e0056f926aa0d5"
-  integrity sha512-fM1gANPO7uqGHrRCk/4SwlajC3I2DpUWrdJZaD51twNjkEmrRwy7C/A8YUNe6qKNdReIjh5fcTJecjciej/r9A==
+ember-intl@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-3.4.0.tgz#57c427b93605bd3e840bf7fcdf8a727360c6bd40"
+  integrity sha512-EGHcY3ICTZ5D4x5VEFPsWVM/PCD20jpf2ek4h0tIBOrGr3FLEtjsFfOrOyqRXHbh6XT8Mao7oR4EGKvR8oT/kQ==
   dependencies:
     "@ember-intl/intl-messageformat" "^2.2.0"
     "@ember-intl/intl-messageformat-parser" "^1.4.0"
