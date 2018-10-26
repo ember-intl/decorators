@@ -639,62 +639,12 @@
     ember-cli-babel-plugin-helpers "^1.0.0"
     ember-cli-version-checker "^2.1.0"
 
-"@ember-decorators/component@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/component/-/component-2.5.2.tgz#54ceb0edbf8cc089b25174897639c5704532274f"
-  integrity sha512-2h795jBe25mycsskdxASO5CgYmwWJ1Nme1ZF2tB4FHJI/fCz5OCntJEe/fQjmvGMLaKZm7ipjEVCYomO6s7YrQ==
-  dependencies:
-    "@ember-decorators/utils" "^2.5.2"
-    ember-cli-babel "^6.6.0"
-
-"@ember-decorators/controller@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/controller/-/controller-2.5.2.tgz#f74a537ba79d966b5bb1402f6407692c849ef9db"
-  integrity sha512-p2IeUZT9SEMYbvSnJO+wW74VNRwG7MCpOWqYfAbFOsAiIv3EYfUYQKIY1Ku4k603syfHvMqpHEkbYx8sZm23Fg==
-  dependencies:
-    "@ember-decorators/utils" "^2.5.2"
-    ember-cli-babel "^6.6.0"
-
-"@ember-decorators/data@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/data/-/data-2.5.2.tgz#11411ccf2b94437ab3a6a23077cd39bd990ab334"
-  integrity sha512-eh1wcRfvejrTfN+McSB8NRmLFP2B19cSmNd51BqbmRwIhRHClO13Fd7tyBOWUtLRhDV/VigqyfDBaxWGTdSbcw==
-  dependencies:
-    "@ember-decorators/utils" "^2.5.2"
-    ember-cli-babel "^6.6.0"
-
-"@ember-decorators/object@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-2.5.2.tgz#3f0d238212da13bda94a129964b47387ed90054c"
-  integrity sha512-9jV1a5D6gJ2eMQY9RP94YGWE+/zOA4+Sw8q49hlE5UIpyguSVHLhsdVvbWK+4WhRImKTr/tFwGU1cIJdVVJ5CQ==
-  dependencies:
-    "@ember-decorators/utils" "^2.5.2"
-    ember-cli-babel "^6.6.0"
-    ember-compatibility-helpers "^1.0.0"
-
 "@ember-decorators/object@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-3.0.0.tgz#84c5d3e62d3b211ffd17a795c0c4a65c3fe52f8d"
   integrity sha512-cvQDoZM+vJJniT0sZZZHS1TWdG9V9XmPBfeiaAlS1YTNQmLmNyDfmqd+/OUJUP0er/im8GjGCzMUifuZWhqdmQ==
   dependencies:
     "@ember-decorators/utils" "^3.0.0"
-    ember-cli-babel "^6.6.0"
-    ember-compatibility-helpers "^1.0.0"
-
-"@ember-decorators/service@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/service/-/service-2.5.2.tgz#0ec93ca10f5e8baa8d93364c794de23a526e8493"
-  integrity sha512-Eb5xw5eYRewXfHUA6mc5ktWDQ0PVAs3rYffm/Q6KnV+mr92VWDm1GUlpm9C80TCxCeb22GJyRH9CSebkG/uB+g==
-  dependencies:
-    "@ember-decorators/utils" "^2.5.2"
-    ember-cli-babel "^6.6.0"
-
-"@ember-decorators/utils@^2.5.2":
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-2.5.2.tgz#656f30f099de597a8ccdd4cece390728930d37d3"
-  integrity sha512-pCn7epjk4kwJQ+d6m4ekIs9QxJKRShCFA7YDpyteNWW/I49ubIhuV8g95jz5I01/Q1j2KasSnCe7xt3mwHsMlA==
-  dependencies:
-    babel-plugin-debug-macros "^0.1.11"
     ember-cli-babel "^6.6.0"
     ember-compatibility-helpers "^1.0.0"
 
@@ -4166,7 +4116,7 @@ ember-cli-babel-plugin-helpers@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.0.0.tgz#19f3142a2272adb1cc61dfe0dce360e2909a0b07"
   integrity sha512-x7Nh9/ATLk0pArFDW9y0HJRiE1i8myoiQ+Xlq5aZKJX1uWNcOWMwfCZN5r1uRpcnbBXPwUjBmhR14YKN5qIzxg==
 
-ember-cli-babel@^6.0.0, ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.17.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
+ember-cli-babel@^6.0.0-beta.4, ember-cli-babel@^6.0.0-beta.7, ember-cli-babel@^6.12.0, ember-cli-babel@^6.16.0, ember-cli-babel@^6.6.0, ember-cli-babel@^6.8.1, ember-cli-babel@^6.8.2:
   version "6.17.2"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-6.17.2.tgz#f0d53d2fb95e70c15d8db84760d045f88f458f69"
   integrity sha512-9KcCvF1PcelEFTSiJ/Ld20tfuW9acMkwHC/xINLsmwqJVDbm3oEqWtiFDZ5ebaC278O5I0GqNJWJLYNoWMNZ8g==
@@ -4449,19 +4399,6 @@ ember-compatibility-helpers@^1.0.0:
     ember-cli-version-checker "^2.1.1"
     semver "^5.4.1"
 
-ember-decorators@^2.4.1:
-  version "2.5.2"
-  resolved "https://registry.yarnpkg.com/ember-decorators/-/ember-decorators-2.5.2.tgz#6d69c48d86df5f90c3d540486681c08a33256196"
-  integrity sha512-nDAEvV4IK+uw+Rl4yBhH6q1rm9+3EIfTPsQHfXBr77qnnOtoXLlHQv8Z087KnaET06COKzszBLrGqLgJHium/Q==
-  dependencies:
-    "@ember-decorators/component" "^2.5.2"
-    "@ember-decorators/controller" "^2.5.2"
-    "@ember-decorators/data" "^2.5.2"
-    "@ember-decorators/object" "^2.5.2"
-    "@ember-decorators/service" "^2.5.2"
-    ember-cli-babel "^6.0.0"
-    semver "^5.5.0"
-
 ember-disable-prototype-extensions@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/ember-disable-prototype-extensions/-/ember-disable-prototype-extensions-1.1.3.tgz#1969135217654b5e278f9fe2d9d4e49b5720329e"
@@ -4475,9 +4412,9 @@ ember-export-application-global@^2.0.0:
     ember-cli-babel "^6.0.0-beta.7"
 
 ember-intl@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-3.4.0.tgz#57c427b93605bd3e840bf7fcdf8a727360c6bd40"
-  integrity sha512-EGHcY3ICTZ5D4x5VEFPsWVM/PCD20jpf2ek4h0tIBOrGr3FLEtjsFfOrOyqRXHbh6XT8Mao7oR4EGKvR8oT/kQ==
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-3.5.0.tgz#40efd9e5c369943f1d1178a97a780e02a05b3dde"
+  integrity sha512-jm4Kr5vFE8MJZ+mNTvrxhtyE7z9Xdo0xJbmcavvg/aBDBM3MytPTotILA2febVLP2dVUtrDcRfL6CDHY+H27rA==
   dependencies:
     "@ember-intl/intl-messageformat" "^2.2.0"
     "@ember-intl/intl-messageformat-parser" "^1.4.0"
@@ -4490,8 +4427,7 @@ ember-intl@^3.4.0:
     broccoli-stew "^2.0.0"
     cldr-core "28.0.0"
     ember-auto-import "^1.2.13"
-    ember-cli-babel "^6.17.0"
-    ember-decorators "^2.4.1"
+    ember-cli-babel "^7.1.2"
     extend "^3.0.2"
     fast-memoize "^2.5.1"
     has-unicode "^2.0.1"
