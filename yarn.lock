@@ -868,9 +868,9 @@
     registry-auth-token "^3.3.1"
 
 "@semantic-release/release-notes-generator@^7.1.0", "@semantic-release/release-notes-generator@^7.1.1":
-  version "7.1.1"
-  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.1.1.tgz#74096f4c7d1ba5a0b6a2f6e2b3793a163aad0a3c"
-  integrity sha512-UbF0aU/RHeOW38jYcOPJFEqqxq01zKuaT54cdzyaci3cH8jfocR7YaPevtx7PTnwmha54ukuT+JQ9vBViYPTZw==
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.1.2.tgz#8c0d87727058a7911056f87ba6e48cf109779e8d"
+  integrity sha512-dpI2dWmr3r5cLHhwzU6WfrnoAdAghJ3oqkk5MGieW02w+Su2y8bscuQlb0lOkb7nVnI2cAOgbXQy7feAcrWwgw==
   dependencies:
     conventional-changelog-angular "^5.0.0"
     conventional-changelog-writer "^4.0.0"
@@ -878,7 +878,6 @@
     conventional-commits-parser "^3.0.0"
     debug "^4.0.0"
     get-stream "^4.0.0"
-    git-url-parse "^10.0.1"
     import-from "^2.1.0"
     into-stream "^4.0.0"
     lodash "^4.17.4"
