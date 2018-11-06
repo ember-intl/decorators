@@ -868,9 +868,9 @@
     registry-auth-token "^3.3.1"
 
 "@semantic-release/release-notes-generator@^7.1.1", "@semantic-release/release-notes-generator@^7.1.2":
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.1.3.tgz#ef76ef5100fe38c176510a665410874952c7c1ba"
-  integrity sha512-J1zrtP9l2MXNnVnPZCpQV/YbLmmaDS4MN7Pp2OYj5ZcARxN/3xxIPrmf10CAgzirPw2Wqxlwg3DjcIchDJVkgg==
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.1.4.tgz#8f4f752c5a8385abdaac1256127cef05988bc2ad"
+  integrity sha512-pWPouZujddgb6t61t9iA9G3yIfp3TeQ7bPbV1ixYSeP6L7gI1+Du82fY/OHfEwyifpymLUQW0XnIKgKct5IMMw==
   dependencies:
     conventional-changelog-angular "^5.0.0"
     conventional-changelog-writer "^4.0.0"
