@@ -640,18 +640,18 @@
     ember-cli-version-checker "^2.1.0"
 
 "@ember-decorators/object@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-3.0.1.tgz#6b45315692368beaef86a23091ee5c026d177f66"
-  integrity sha512-EKWD6gM2IAs9kw3ONnbIuPZ/NhWGjABEWo6TTQh3jd1san3bRuT6S3zyAu2eyCYA1d6q4lYtRw4NOWvC1yTBuQ==
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/object/-/object-3.0.2.tgz#85ebc17fe0d37f0e6367d15c71c70dafa9341191"
+  integrity sha512-Gl7ODoml0lWNbi4M28BCmU3fLKmEvdq7JC4pUqoV3OQzEnrFp7SQzsi1W7ci7Bg0mhZUtBdGneZGGPreSOgp3w==
   dependencies:
-    "@ember-decorators/utils" "^3.0.1"
+    "@ember-decorators/utils" "^3.0.2"
     ember-cli-babel "^6.6.0"
     ember-compatibility-helpers "^1.0.0"
 
-"@ember-decorators/utils@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-3.0.1.tgz#1da79d8fccbdd59dc22d60bbecb953da29c97611"
-  integrity sha512-hcBqzkub3/5qzc3tl4JY0AaZzXEkl7PgaN3WaVM+4Ik/9XVyY8iNWSERYOLAZVR78fEQ5nprc571g/+mJHWtBw==
+"@ember-decorators/utils@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-3.0.2.tgz#c2171684451f898d31ce77a3f44b3ffcd6b71b02"
+  integrity sha512-9gXHPp4D6M9h9m4mIIaGEsmlgCR6Ps8OzXq5GBOS+sPvGxg2C6Rgbim/UWzOykaX1QX8iFePum2AYie2AXIENw==
   dependencies:
     babel-plugin-debug-macros "^0.1.11"
     ember-cli-babel "^6.6.0"
