@@ -14,16 +14,19 @@ module('Unit | @t', function(hooks) {
   });
 
   hooks.beforeEach(function() {
-    const intl = this.owner.lookup('service:intl');
-    this.intl = intl;
+    this.intl = this.owner.lookup('service:intl');
 
-    this.TestObject = class TestObject extends EmberObject {
-      intl = intl;
+    const { owner } = this;
+    this.ContainerObject = class extends EmberObject {
+      constructor() {
+        super();
+        setOwner(this, owner);
+      }
     };
   });
 
   test('defines a computed property that translates without interpolations', function(assert) {
-    const object = new class extends this.TestObject {
+    const object = new class extends this.ContainerObject {
       @t('no.interpolations')
       property;
     }();
@@ -32,7 +35,7 @@ module('Unit | @t', function(hooks) {
   });
 
   test('defines a computed property that translates with interpolations', function(assert) {
-    const object = new class extends this.TestObject {
+    const object = new class extends this.ContainerObject {
       numberOfClicks = 9;
 
       @t('with.interpolations', { clicks: 'numberOfClicks' })
@@ -43,7 +46,7 @@ module('Unit | @t', function(hooks) {
   });
 
   test('defines a computed property with dependencies', function(assert) {
-    const object = new class extends this.TestObject {
+    const object = new class extends this.ContainerObject {
       numberOfClicks = 9;
 
       @t('with.interpolations', { clicks: 'numberOfClicks' })
@@ -59,7 +62,7 @@ module('Unit | @t', function(hooks) {
       'no.interpolations': 'texto sin interpolaciones'
     });
 
-    const object = new class extends this.TestObject {
+    const object = new class extends this.ContainerObject {
       @t('no.interpolations')
       property;
     }();
@@ -68,21 +71,5 @@ module('Unit | @t', function(hooks) {
     run(() => this.intl.setLocale('es'));
 
     assert.strictEqual(get(object, 'property'), 'texto sin interpolaciones');
-  });
-
-  test('looks up the intl service through the owner, if it not injected', function(assert) {
-    const object = new class {
-      @t('no.interpolations')
-      property;
-    }();
-
-    setOwner(object, {
-      lookup: name => {
-        assert.strictEqual(name, 'service:intl');
-        return this.intl;
-      }
-    });
-
-    assert.strictEqual(get(object, 'property'), 'text with no interpolations');
   });
 });
