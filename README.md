@@ -27,6 +27,8 @@ ember install ember-intl @ember-intl/decorators
 ### `@t`
 
 Decorator version of the [ember-intl `translationMacro`](https://github.com/ember-intl/ember-intl/blob/master/docs/translating-text.md#computed-property-macro).
+Implicitly injects the `intl` service. Creates a computed property that depends
+on the current locale and any keys that you pass as the second parameter.
 
 ```js
 import Component from '@ember/component';
@@ -35,6 +37,23 @@ import { t } from '@ember-intl/decorators';
 class ExampleComponent extends Component {
   name = 'Tom';
 
-  @t('messages.welcome', { firstName: 'name' }) message;
+  @t('messages.welcome', { firstName: 'name' }) message; // => 'Welcome, Tom!'
+}
+```
+
+Using the `raw` helper you can pass static values as well:
+
+```js
+import Component from '@ember/component';
+import { t, raw } from '@ember-intl/decorators';
+
+class ExampleComponent extends Component {
+  name = 'Tom';
+
+  @t('messages.greeting', {
+    firstName: 'name',
+    timeOfDay: raw('morning')
+  })
+  message; // => 'Good morning, Tom!'
 }
 ```
