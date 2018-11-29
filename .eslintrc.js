@@ -1,12 +1,12 @@
 /* eslint-env node */
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: 'eslint-plugin-typescript/parser',
   parserOptions: {
     ecmaVersion: 2017,
     sourceType: 'module'
   },
-  plugins: ['ember', 'prettier'],
+  plugins: ['typescript', 'ember', 'prettier'],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
@@ -15,7 +15,11 @@ module.exports = {
   env: {
     browser: true
   },
-  rules: {},
+  rules: {
+    // @TODO: remove once the parser understands class fields
+    'no-undef': 'warn',
+    'typescript/no-unused-vars': 'error'
+  },
   overrides: [
     // node files
     {
