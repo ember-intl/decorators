@@ -1,6 +1,6 @@
 {
   "name": "@ember-intl/decorators",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Decorators for using ember-intl with ES6 class syntax",
   "keywords": [
     "ember-addon"
