@@ -1,10 +1,12 @@
-import { setOwner } from '@ember/application';
 import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
-import EmberObject, { get, set } from '@ember/object';
+import { get, set } from '@ember/object';
 import { run } from '@ember/runloop';
 import { setupIntl } from 'ember-intl/test-support';
 import { intl } from '@ember-intl/decorators';
+import TestContext from '../test-context';
+import setupContainerObject from '../helper/setup-container-object';
+import IntlService from 'ember-intl/services/intl';
 
 module('Unit | @intl', function(hooks) {
   setupTest(hooks);
@@ -12,31 +14,22 @@ module('Unit | @intl', function(hooks) {
     'no.interpolations': 'text with no interpolations',
     'with.interpolations': 'Clicks: {clicks}'
   });
+  setupContainerObject(hooks);
 
-  hooks.beforeEach(function() {
-    this.intl = this.owner.lookup('service:intl');
-
-    const { owner } = this;
-    this.ContainerObject = class extends EmberObject {
-      constructor() {
-        super();
-        setOwner(this, owner);
-      }
-    };
-  });
-
-  test('basic functionality', function(assert) {
-    const object = new class extends this.ContainerObject {
+  test('basic functionality', function(this: TestContext, assert) {
+    class TestObject extends this.ContainerObject {
       amount = 1.23;
       currency = 'EUR';
 
       @intl('amount', 'currency')
-      formatted = intl =>
+      // @ts-ignore
+      formatted: string = (intl: IntlService) =>
         intl.formatNumber(this.amount, {
           style: 'currency',
           currency: this.currency
         });
-    }();
+    }
+    const object = new TestObject();
 
     assert.strictEqual(
       get(object, 'formatted'),
@@ -66,22 +59,23 @@ module('Unit | @intl', function(hooks) {
     );
   });
 
-  test('accepts arrow functions', function(assert) {
+  test('accepts arrow functions', function(this: TestContext, assert) {
     assert.expect(4);
 
     const intlService = this.intl;
     const IDENTITY = {};
 
-    const object = new class extends this.ContainerObject {
+    class TestObject extends this.ContainerObject {
       @intl
-      formatted = (i, propertyKey) => {
+      formatted = (i: IntlService, propertyKey: string) => {
         assert.strictEqual(i, intlService, 'intl service is passed');
         assert.strictEqual(propertyKey, 'formatted', 'propertyKey is passed');
         assert.strictEqual(this, object, 'this context is correct');
 
         return IDENTITY;
       };
-    }();
+    }
+    const object = new TestObject();
 
     assert.strictEqual(
       get(object, 'formatted'),
@@ -90,22 +84,23 @@ module('Unit | @intl', function(hooks) {
     );
   });
 
-  test('accepts methods', function(assert) {
+  test('accepts methods', function(this: TestContext, assert) {
     assert.expect(4);
 
     const intlService = this.intl;
     const IDENTITY = {};
 
-    const object = new class extends this.ContainerObject {
+    class TestObject extends this.ContainerObject {
       @intl
-      formatted(i, propertyKey) {
+      formatted(i: IntlService, propertyKey: string) {
         assert.strictEqual(i, intlService, 'intl service is passed');
         assert.strictEqual(propertyKey, 'formatted', 'propertyKey is passed');
         assert.strictEqual(this, object, 'this context is correct');
 
         return IDENTITY;
       }
-    }();
+    }
+    const object = new TestObject();
 
     assert.strictEqual(
       get(object, 'formatted'),

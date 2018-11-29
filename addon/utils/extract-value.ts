@@ -1,4 +1,4 @@
-export default function extractValue(desc, ctx = null) {
+export default function extractValue(desc: any, ctx: any = null) {
   if ('value' in desc.descriptor) {
     return desc.descriptor.value;
   }
