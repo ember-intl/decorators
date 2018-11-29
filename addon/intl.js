@@ -1,0 +1,23 @@
+import { decoratorWithParams } from '@ember-decorators/utils/decorator';
+import { computedDecorator } from '@ember-decorators/utils/computed';
+import { assert } from '@ember/debug';
+import extractValue from './utils/extract-value';
+import { IntlComputedProperty } from 'ember-intl';
+
+export default decoratorWithParams((desc, dependentKeys = []) => {
+  const { initializer } = desc;
+  delete desc.initializer;
+
+  return computedDecorator(
+    desc =>
+      new IntlComputedProperty(...dependentKeys, function(intl, propertyKey) {
+        const fn = extractValue({ ...desc, initializer }, this);
+        assert(
+          `@intl: You need to decorate a function, but you decorated '${fn}'.`,
+          typeof fn === 'function'
+        );
+
+        return fn.call(this, intl, propertyKey);
+      })
+  )(desc);
+});

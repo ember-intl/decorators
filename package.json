@@ -22,8 +22,9 @@
   },
   "dependencies": {
     "@ember-decorators/object": "^3.0.0",
+    "@ember-decorators/utils": "^3.1.1",
     "ember-cli-babel": "^7.1.2",
-    "ember-intl": "^3.4.0"
+    "ember-intl": "ember-intl/ember-intl#refactor/extract-IntlComputedProperty"
   },
   "devDependencies": {
     "@ember-decorators/babel-transforms": "^3.1.1",

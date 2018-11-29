@@ -57,3 +57,34 @@ class ExampleComponent extends Component {
   message; // => 'Good morning, Tom!'
 }
 ```
+
+### `@intl`
+
+A generic decorator that implicitly injects the `intl` service and creates a
+computed property that depends on the current locale and any further optional
+dependent keys passed to the decorator.
+
+The decorated method or (arrow) function is bound to the class instance the
+decorator is used on and invoked with two parameters:
+
+- `intl`: the `intl` service, that you can use to call any method on
+- `propertyKey`: the name of the decorated property
+
+The return value is used as the value of the computed property.
+
+```js
+import Component from '@ember/component';
+import { intl } from '@ember-intl/decorators';
+
+class ExampleComponent extends Component {
+  amount = 1.23;
+  currency = 'EUR';
+
+  @intl('amount', 'currency')
+  formatted = intl =>
+    intl.formatNumber(this.amount, {
+      style: 'currency',
+      currency: this.currency
+    });
+}
+```
