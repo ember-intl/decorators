@@ -15,7 +15,7 @@
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint **/*.hbs",
-    "lint:js": "eslint .",
+    "lint:js": "eslint --ext ts,js .",
     "start": "ember serve",
     "test": "ember test",
     "test:all": "ember try:each",
@@ -70,6 +70,7 @@
     "eslint-plugin-ember": "^6.0.1",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-typescript": "bradzacher/eslint-plugin-typescript",
     "loader.js": "^4.7.0",
     "prettier": "^1.14.3",
     "qunit-dom": "^0.8.0",
