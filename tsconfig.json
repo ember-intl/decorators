@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2017",
+    "experimentalDecorators": true,
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
@@ -20,28 +21,13 @@
     "baseUrl": ".",
     "module": "es6",
     "paths": {
-      "dummy/tests/*": [
-        "tests/*"
-      ],
-      "dummy/*": [
-        "tests/dummy/app/*",
-        "app/*"
-      ],
-      "@ember-intl/decorators": [
-        "addon"
-      ],
-      "@ember-intl/decorators/*": [
-        "addon/*"
-      ],
-      "@ember-intl/decorators/test-support": [
-        "addon-test-support"
-      ],
-      "@ember-intl/decorators/test-support/*": [
-        "addon-test-support/*"
-      ],
-      "*": [
-        "types/*"
-      ]
+      "dummy/tests/*": ["tests/*"],
+      "dummy/*": ["tests/dummy/app/*", "app/*"],
+      "@ember-intl/decorators": ["addon"],
+      "@ember-intl/decorators/*": ["addon/*"],
+      "@ember-intl/decorators/test-support": ["addon-test-support"],
+      "@ember-intl/decorators/test-support/*": ["addon-test-support/*"],
+      "*": ["types/*"]
     }
   },
   "include": [
