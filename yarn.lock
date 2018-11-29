@@ -714,7 +714,7 @@
     "@ember-decorators/utils" "^3.1.2"
     ember-cli-babel "^7.1.3"
 
-"@ember-decorators/utils@^3.1.2":
+"@ember-decorators/utils@^3.1.1", "@ember-decorators/utils@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-3.1.2.tgz#ab15211577b4267ba5d5e35e704206738a6aa6ff"
   integrity sha512-1+i1+BHz1QXW5zzsJTEmR+wVcLm3k1bTb1a37k1X7XXSxDyU7MRo1CnafR4H+70qKlJPnfxyeWd9jHpNnuLrSQ==
@@ -4532,9 +4532,10 @@ ember-export-application-global@^2.0.0:
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
 
-ember-intl@ember-intl/ember-intl#refactor/extract-IntlComputedProperty:
-  version "4.0.0-beta.2"
-  resolved "https://codeload.github.com/ember-intl/ember-intl/tar.gz/6da23640b09e7c73c9ede8e1c4039ec32043281c"
+ember-intl@^4.0.0-beta.3:
+  version "4.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-4.0.0-beta.3.tgz#997109136ea8b26a8a97af921be5de7ca7030da1"
+  integrity sha512-Lqt0En9Pw8KuzlpeB9y44jR+xaSZmmNPj4h9iwWmDHYJ0a4XQOLV8rPMXrp0YQsFpeE6RIoXDmtXTseAVZtQPQ==
   dependencies:
     "@ember-intl/broccoli-cldr-data" "^3.1.0"
     "@ember-intl/intl-messageformat" "^2.2.0"
