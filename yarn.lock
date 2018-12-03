@@ -5144,8 +5144,8 @@ eslint-plugin-prettier@^3.0.0:
 
 eslint-plugin-typescript@bradzacher/eslint-plugin-typescript:
   version "0.14.0"
-  uid ea418acf10cbeaed35c2f82e5e0fd7210e3b6dde
-  resolved "https://codeload.github.com/bradzacher/eslint-plugin-typescript/tar.gz/ea418acf10cbeaed35c2f82e5e0fd7210e3b6dde"
+  uid ba59fcf1eb551b5a02a3d27a3b8e5e1dd9ff1e2d
+  resolved "https://codeload.github.com/bradzacher/eslint-plugin-typescript/tar.gz/ba59fcf1eb551b5a02a3d27a3b8e5e1dd9ff1e2d"
   dependencies:
     requireindex "~1.2.0"
     typescript-eslint-parser "^17.0.1"
