@@ -1,14 +1,11 @@
 /* eslint-env node */
 module.exports = {
   root: true,
-  parser: 'eslint-plugin-typescript/parser',
-  parserOptions: {
-    ecmaVersion: 2017,
-    sourceType: 'module'
-  },
-  plugins: ['typescript', 'ember', 'prettier'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'ember', 'prettier'],
   extends: [
     'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:ember/recommended',
     'plugin:prettier/recommended'
   ],
@@ -16,9 +13,9 @@ module.exports = {
     browser: true
   },
   rules: {
-    // @TODO: remove once the parser understands class fields
-    'no-undef': 'warn',
-    'typescript/no-unused-vars': 'error'
+    indent: 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/explicit-member-accessibility': 'off'
   },
   overrides: [
     // node files
@@ -52,7 +49,7 @@ module.exports = {
         {},
         require('eslint-plugin-node').configs.recommended.rules,
         {
-          // add your custom rules and overrides for node files here
+          '@typescript-eslint/no-var-requires': 'off'
         }
       )
     }

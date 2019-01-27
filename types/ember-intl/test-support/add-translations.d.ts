@@ -1,4 +1,6 @@
-type Translations = { [key: string]: string };
+interface Translations {
+  [key: string]: string;
+}
 
 /**
  * Invokes the `addTranslations` method of the `intl` service. The first
