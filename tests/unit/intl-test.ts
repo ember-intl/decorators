@@ -64,6 +64,7 @@ module('Unit | @intl', function(hooks) {
 
     const intlService = this.intl;
     const IDENTITY = {};
+    let object: TestObject;
 
     class TestObject extends this.ContainerObject {
       @intl
@@ -75,7 +76,7 @@ module('Unit | @intl', function(hooks) {
         return IDENTITY;
       };
     }
-    const object = new TestObject();
+    object = new TestObject();
 
     assert.strictEqual(
       get(object, 'formatted'),
@@ -89,6 +90,7 @@ module('Unit | @intl', function(hooks) {
 
     const intlService = this.intl;
     const IDENTITY = {};
+    let object: TestObject;
 
     class TestObject extends this.ContainerObject {
       @intl
@@ -100,7 +102,7 @@ module('Unit | @intl', function(hooks) {
         return IDENTITY;
       }
     }
-    const object = new TestObject();
+    object = new TestObject();
 
     assert.strictEqual(
       get(object, 'formatted'),

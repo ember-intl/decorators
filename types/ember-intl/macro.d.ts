@@ -22,7 +22,9 @@ declare class Raw<Value> {
  */
 export function raw<Value>(value: Value): Raw<Value>;
 
-type OptionsFor<Ctx extends object> = { [key: string]: Raw<any> | keyof Ctx };
+interface OptionsFor<Ctx extends object> {
+  [key: string]: Raw<any> | keyof Ctx;
+}
 
 declare class TranslationMacro<Ctx extends object> extends IntlComputedProperty<
   Ctx
