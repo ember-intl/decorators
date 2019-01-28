@@ -1,6 +1,45 @@
 'use strict';
 
 const getChannelURL = require('ember-source-channel-url');
+const flatMap = require('lodash.flatmap');
+const merge = require('lodash.merge');
+
+const withDecoratorVariants = scenarios =>
+  flatMap(scenarios, scenario => [
+    merge({}, scenario, {
+      name: `${scenario.name}-e-d-v3`,
+      npm: {
+        devDependencies: {
+          '@ember-decorators/babel-transforms': '^3.1.2'
+        },
+        dependencies: {
+          '@ember-decorators/utils': '^3.1.2'
+        }
+      }
+    }),
+    merge({}, scenario, {
+      name: `${scenario.name}-e-d-v4`,
+      npm: {
+        devDependencies: {
+          '@ember-decorators/babel-transforms': '^4.0.0'
+        },
+        dependencies: {
+          '@ember-decorators/utils': '^4.0.0'
+        }
+      }
+    }),
+    merge({}, scenario, {
+      name: `${scenario.name}-e-d-v5`,
+      npm: {
+        devDependencies: {
+          '@ember-decorators/babel-transforms': '^5.0.0'
+        },
+        dependencies: {
+          '@ember-decorators/utils': '^5.0.0'
+        }
+      }
+    })
+  ]);
 
 module.exports = function() {
   return Promise.all([
@@ -10,7 +49,7 @@ module.exports = function() {
   ]).then(urls => {
     return {
       useYarn: true,
-      scenarios: [
+      scenarios: withDecoratorVariants([
         {
           name: 'ember-lts-2.18',
           env: {
@@ -66,21 +105,8 @@ module.exports = function() {
           npm: {
             devDependencies: {}
           }
-        },
-        {
-          name: 'ember-default-with-jquery',
-          env: {
-            EMBER_OPTIONAL_FEATURES: JSON.stringify({
-              'jquery-integration': true
-            })
-          },
-          npm: {
-            devDependencies: {
-              '@ember/jquery': '^0.5.1'
-            }
-          }
         }
-      ]
+      ])
     };
   });
 };
