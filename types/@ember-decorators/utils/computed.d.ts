@@ -1,5 +1,3 @@
-// @TODO: re-enable once TypeScript parser works properly
-// eslint-disable-next-line no-unused-vars
 import ComputedProperty from '@ember/object/computed';
 import { Descriptor } from './decorator';
 
