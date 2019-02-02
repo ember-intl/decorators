@@ -4720,9 +4720,9 @@ ember-export-application-global@^2.0.0:
     ember-cli-babel "^6.0.0-beta.7"
 
 ember-intl@^4.0.0-beta.3:
-  version "4.0.0-beta.6"
-  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-4.0.0-beta.6.tgz#667d1feb6e295ea15f2f5eebed2a061703b2f7ec"
-  integrity sha512-kk3of4j2B7VVLJcOswiYr/T48j9lG7+6bJl8NRJ3tQYv6qBSNaDbR9R2CIa3ONsX+Yh3RguN9jcukZe+ZurVvw==
+  version "4.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-4.0.0-beta.7.tgz#d852992010c791f16a7f0fbb423a688d9d4a0939"
+  integrity sha512-2pG+Izppif3yK9eD42FIK/2Qj9CkxiPSHhwi1C02kDW9c3ieJuvGvodmgAo2W9S/kjpe5bravmg4ORJEIFQa1A==
   dependencies:
     "@ember-intl/broccoli-cldr-data" "^3.1.0"
     "@ember-intl/intl-messageformat" "^2.5.0"
@@ -4733,6 +4733,7 @@ ember-intl@^4.0.0-beta.3:
     broccoli-merge-trees "^3.0.2"
     broccoli-source "^1.1.0"
     broccoli-stew "^2.0.1"
+    calculate-cache-key-for-tree "^1.1.0"
     cldr-core "^34.0.0"
     ember-auto-import "^1.2.19"
     ember-cli-babel "^7.2.0"
