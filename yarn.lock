@@ -678,9 +678,9 @@
     ember-cli-version-checker "^3.0.0"
 
 "@ember-decorators/utils@^5.1.2 || ^4.0.0 || ^3.0.0":
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-5.1.2.tgz#23ff1561ae6ecde14799d5df2a985fa134ca5269"
-  integrity sha512-EwaL93W0TDN9HjNCwVpYRtMShljP7y1vM4CUkF9lSMGcEqChl1HZemuJ2D2Lx+mIpPQhz8yskkPwCuvs9l3qGQ==
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-5.1.4.tgz#e8a18e614b3bd282c548803fd5e94d49d8fbaeee"
+  integrity sha512-wWJwhVIG1xwY0PbyWx7GHIkEvqDejzJ6trHtHSsTjBhhLbBtQqJN3DCHe4IltCyvizhzusRiFrZJB1g+eWiXCA==
   dependencies:
     babel-plugin-debug-macros "^0.2.0"
     ember-cli-babel "^7.1.3"
