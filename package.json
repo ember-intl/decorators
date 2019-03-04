@@ -78,6 +78,9 @@
     "semantic-release": "^15.13.3",
     "typescript": "^3.3.3333"
   },
+  "resolutions": {
+    "handlebars": "~4.0.13"
+  },
   "engines": {
     "node": "8.* || >= 10.*"
   },
