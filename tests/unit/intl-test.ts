@@ -19,12 +19,13 @@ module('Unit | @intl', function(hooks) {
   test('basic functionality', function(this: TestContext, assert) {
     class TestObject extends this.ContainerObject {
       amount = 1.23;
+
       currency = 'EUR';
 
       @intl('amount', 'currency')
       // @ts-ignore
-      formatted: string = (intl: IntlService) =>
-        intl.formatNumber(this.amount, {
+      formatted: string = (intlService: IntlService) =>
+        intlService.formatNumber(this.amount, {
           style: 'currency',
           currency: this.currency
         });
@@ -34,7 +35,7 @@ module('Unit | @intl', function(hooks) {
     assert.strictEqual(
       get(object, 'formatted'),
       '€1.23',
-      'formats the value as epected'
+      'formats the value as expected'
     );
 
     run(() => set(object, 'amount', 4.56));

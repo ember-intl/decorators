@@ -9,7 +9,9 @@ import ComputedProperty from '@ember/object/computed';
  */
 declare class Raw<Value> {
   constructor(value: Value);
+
   valueOf(): Value;
+
   toString(): string;
 }
 

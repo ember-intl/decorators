@@ -1,7 +1,9 @@
+/* eslint-disable no-param-reassign */
+
 import { decoratorWithParams } from '@ember-decorators/utils/decorator';
 import { computedDecorator } from '@ember-decorators/utils/computed';
 import { assert } from '@ember/debug';
-import { Service as IntlService, intl } from 'ember-intl';
+import { Service as IntlService, intl as intlMacro } from 'ember-intl';
 import { Descriptor } from '@ember-decorators/utils/decorator';
 
 type GetterFn = (intl: IntlService, propertyKey: string) => any;
@@ -40,7 +42,10 @@ export default decoratorWithParams(
     }
 
     return computedDecorator(() =>
-      intl(...dependentKeys, function(intl: IntlService, propertyKey: string) {
+      intlMacro(...dependentKeys, function(
+        intl: IntlService,
+        propertyKey: string
+      ) {
         const fn = value || initializer.call(this);
         assert(
           `@intl: You need to decorate a function, but you decorated '${fn}'.`,
