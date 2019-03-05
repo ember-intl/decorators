@@ -6,7 +6,7 @@ export function computedDecorator(
 ): PropertyDecorator & ((desc: Descriptor) => Descriptor);
 
 export function computedDecoratorWithRequiredParams<Params extends any[]>(
-  fn: (desc: Descriptor, params: Params) => ComputedProperty<any>,
+  fn: (...params: Params) => ComputedProperty<any>,
   name?: string
 ): (
   ...params: Params

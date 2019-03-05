@@ -1,4 +1,4 @@
-import IntlComputedProperty from './intl-computed-property';
+import ComputedProperty from '@ember/object/computed';
 
 /**
  * This class is used to box primitive types and mark them as raw literals that
@@ -26,13 +26,7 @@ interface OptionsFor<Ctx extends object> {
   [key: string]: Raw<any> | keyof Ctx;
 }
 
-declare class TranslationMacro<Ctx extends object> extends IntlComputedProperty<
-  Ctx
-> {
-  constructor(translationKey: string, options?: OptionsFor<Ctx>);
-}
-
 export default function createTranslatedComputedProperty<Ctx extends object>(
   key: string,
   options?: OptionsFor<Ctx>
-): TranslationMacro<Ctx>;
+): ComputedProperty<() => string>;

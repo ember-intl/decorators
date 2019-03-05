@@ -1,30 +1,54 @@
 import { decoratorWithParams } from '@ember-decorators/utils/decorator';
 import { computedDecorator } from '@ember-decorators/utils/computed';
 import { assert } from '@ember/debug';
-import extractValue from './utils/extract-value';
-import { IntlComputedProperty } from 'ember-intl';
-import IntlService from 'ember-intl/services/intl';
+import { Service as IntlService, intl } from 'ember-intl';
 import { Descriptor } from '@ember-decorators/utils/decorator';
+
+type GetterFn = (intl: IntlService, propertyKey: string) => any;
 
 export default decoratorWithParams(
   (desc: Descriptor, dependentKeys: string[] = []) => {
-    const { initializer } = desc;
-    delete desc.initializer;
+    let value: GetterFn;
+    let initializer: () => GetterFn;
 
-    return computedDecorator(
-      desc =>
-        new IntlComputedProperty<object>(...dependentKeys, function(
-          intl: IntlService,
-          propertyKey: string
-        ) {
-          const fn = extractValue({ ...desc, initializer }, this);
-          assert(
-            `@intl: You need to decorate a function, but you decorated '${fn}'.`,
-            typeof fn === 'function'
-          );
+    switch (desc.kind) {
+      case 'method':
+        assert(
+          `'${desc.key}' has to be a method on the prototype, not 'static'.`,
+          desc.placement === 'prototype'
+        );
+        ({ value } = desc.descriptor);
+        delete desc.descriptor.value;
+        desc.kind = 'field';
+        break;
+      case 'field':
+        assert(
+          `'${
+            desc.key
+          }' has to be a field on the class instance, not 'static'.`,
+          desc.placement === 'own'
+        );
+        assert(
+          `'${desc.key}' has no initializer.`,
+          typeof desc.initializer === 'function'
+        );
+        ({ initializer } = desc as Required<Descriptor>);
+        delete desc.initializer;
+        break;
+      default:
+        assert(`Unsupported kind '${desc.kind}' for '${desc.key}'.`, false);
+    }
 
-          return fn.call(this, intl, propertyKey);
-        })
+    return computedDecorator(() =>
+      intl(...dependentKeys, function(intl: IntlService, propertyKey: string) {
+        const fn = value || initializer.call(this);
+        assert(
+          `@intl: You need to decorate a function, but you decorated '${fn}'.`,
+          typeof fn === 'function'
+        );
+
+        return fn.call(this, intl, propertyKey);
+      })
     )(desc);
   }
 );

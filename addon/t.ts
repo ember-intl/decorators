@@ -1,12 +1,14 @@
 import { computedDecoratorWithRequiredParams } from '@ember-decorators/utils/computed';
-import { translationMacro } from 'ember-intl';
+import { t as translationMacro } from 'ember-intl';
 
 const t: (
   key: string,
   options?: object
 ) => PropertyDecorator = computedDecoratorWithRequiredParams(
-  (_desc, params: [string, {}]) => translationMacro(...params),
+  translationMacro,
   't'
 );
 
 export default t;
+
+export { raw } from 'ember-intl';
