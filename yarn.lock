@@ -693,11 +693,11 @@
     eslint-plugin-ember-best-practices "^1.1.1"
 
 "@clark/eslint-config-node@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-0.2.0.tgz#89e905e5dde14dbce5649b218042a9d2f6eef8a3"
-  integrity sha512-xbrFSk4iv2tfogd8owpPscPEqoWUOdzsy7Hp878UTwFgaPKsDXFPAG46F0pNonwgbnnte26670zRhJ1UGk5wng==
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-0.2.1.tgz#3fdcd19aa696f455f30dce9dd53a1e57ca00471c"
+  integrity sha512-3N/UkqhDLUtFwBt+RjD/KNfZ+CRwf44+jFLAYNqmwOn2+cq2Jqj3sLszNjCbh/3vM8hIYZ2pf4/Ot8xb7oURYA==
   dependencies:
-    "@clark/eslint-config" "^0.2.0"
+    "@clark/eslint-config" "^0.2.1"
     eslint-plugin-node "^8.0.1"
 
 "@clark/eslint-config-typescript@^0.2.0":
@@ -709,10 +709,10 @@
     "@typescript-eslint/eslint-plugin" "^1.4.2"
     "@typescript-eslint/parser" "^1.4.2"
 
-"@clark/eslint-config@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-0.2.0.tgz#bf37226b27c123d75e364b3f8b8ee3e0d09190ca"
-  integrity sha512-1C5Wjonma5hbzVGcaydjokEu1RHlPTNkWwNlrzkCTSRn61FNoc91nLk7yaP22jAjl3QvseX9S8hwjv7YY8QGGg==
+"@clark/eslint-config@^0.2.0", "@clark/eslint-config@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-0.2.1.tgz#7c96d7cd03b68196c89bd152c03504862d47c649"
+  integrity sha512-ZnNa7UVQU/fqUfnqaLLkT/Ig/bAfSpqVBXtGa7UbAFHnf+Hk0LhNQX+qwsWjINPx5i+ex0oZ9C3nI7Ht8mnkxA==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.1.0"
