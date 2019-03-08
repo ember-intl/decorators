@@ -668,27 +668,27 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@clark/eslint-config-browser@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-browser/-/eslint-config-browser-0.2.1.tgz#881c5e0fec04cd2a0c7d37dc8c97b32a05b3e49f"
-  integrity sha512-Ot1gNGS7QSNaO7+rAMZIN9sfymZ+bli/oXSuRYJBRVWIlXH4Rngd9n0B4xqSQK+TjlZY/8orIFSdiapq+2qjIg==
+"@clark/eslint-config-browser@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-browser/-/eslint-config-browser-0.4.0.tgz#1076d897e207339451dd0be1c4618228a89f8ccc"
+  integrity sha512-i60h43urWPp6fAB8pzKQSjz49sWsMVC5IVbWfHHAA4bLdPeyLjZA0NE4q79f+0AlR3g79I0HNYKBU+HZ2jfFJw==
   dependencies:
-    "@clark/eslint-config" "^0.2.1"
+    "@clark/eslint-config" "^0.4.0"
 
-"@clark/eslint-config-ember-typescript@^0.2.0":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember-typescript/-/eslint-config-ember-typescript-0.2.1.tgz#0bde7be23296601176c2d0c602709a6c0b419228"
-  integrity sha512-jb9e8XTRA4KjYIMa+8zm6G+IN2I7nM1knyi2bKnEmC1TSmeJ5KUHVhXNnXciHe03EsNFjl3fY20Snxk5lQL9qw==
+"@clark/eslint-config-ember-typescript@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember-typescript/-/eslint-config-ember-typescript-0.4.0.tgz#440e29b8d2ec1a0dca5b23b7f953badc29a40451"
+  integrity sha512-db3lvICbybkl6ZwQ22A5uDMChbN29a+nnG+zbRoSfOjnFDUvP44Ze//VnfpFQ4nsTTV6PeJv3sDe9vv23A5UdQ==
   dependencies:
-    "@clark/eslint-config-ember" "^0.2.1"
-    "@clark/eslint-config-typescript" "^0.2.1"
+    "@clark/eslint-config-ember" "^0.4.0"
+    "@clark/eslint-config-typescript" "^0.4.0"
 
-"@clark/eslint-config-ember@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember/-/eslint-config-ember-0.2.1.tgz#005c8cded4681911a528305ff431b1055b8b7ece"
-  integrity sha512-otzGMhxuAsrL0Kpz28v6FhY/xDBubedLI36It7Cej/O7ey5Kz8MCJY/9GHcQ26BXvywZtzDwIUTkS7v0LIGl3A==
+"@clark/eslint-config-ember@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-ember/-/eslint-config-ember-0.4.0.tgz#fd5ef726028efd86f6c9223c3a25541135b747af"
+  integrity sha512-u5TCQQ36Xj3i4B9XyHgvmlmrXc7udi7PIbBJEbPUpKsImc0qKwo+fRJDA8DU7pYZBVfxPk/R/iSkRjgybnQ9tQ==
   dependencies:
-    "@clark/eslint-config-browser" "^0.2.1"
+    "@clark/eslint-config-browser" "^0.4.0"
     eslint-plugin-ember "^6.2.0"
     eslint-plugin-ember-best-practices "^1.1.1"
 
@@ -700,16 +700,16 @@
     "@clark/eslint-config" "^0.2.1"
     eslint-plugin-node "^8.0.1"
 
-"@clark/eslint-config-typescript@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-typescript/-/eslint-config-typescript-0.2.1.tgz#4a57e2f5d97601f9cdbf9c18cec5d519d31db023"
-  integrity sha512-7N+DU46veuf4x/m4/QNp5amL82erdY1I5+RNw6yWBokrCdtIS1WPyeNnqq2WJ9G/4WOyh6bW+Xvg+2zhCWjkIw==
+"@clark/eslint-config-typescript@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-typescript/-/eslint-config-typescript-0.4.0.tgz#200a6f01f1bc70b248d9af416ad08647d97f028f"
+  integrity sha512-meRkhp/uW3/cCwtA9Uv41JZGrds1X1bWScZRw8ZFn3c/Qm0oC91drxrLZI956+kMzIaV2cfpWeqFY9xBZNE5Xg==
   dependencies:
-    "@clark/eslint-config" "^0.2.1"
+    "@clark/eslint-config" "^0.4.0"
     "@typescript-eslint/eslint-plugin" "^1.4.2"
     "@typescript-eslint/parser" "^1.4.2"
 
-"@clark/eslint-config@^0.2.0", "@clark/eslint-config@^0.2.1":
+"@clark/eslint-config@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-0.2.1.tgz#7c96d7cd03b68196c89bd152c03504862d47c649"
   integrity sha512-ZnNa7UVQU/fqUfnqaLLkT/Ig/bAfSpqVBXtGa7UbAFHnf+Hk0LhNQX+qwsWjINPx5i+ex0oZ9C3nI7Ht8mnkxA==
@@ -723,10 +723,10 @@
     eslint-plugin-unicorn "^7.0.0"
     prettier "^1.16.4"
 
-"@clark/eslint-config@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-0.2.1.tgz#7c96d7cd03b68196c89bd152c03504862d47c649"
-  integrity sha512-ZnNa7UVQU/fqUfnqaLLkT/Ig/bAfSpqVBXtGa7UbAFHnf+Hk0LhNQX+qwsWjINPx5i+ex0oZ9C3nI7Ht8mnkxA==
+"@clark/eslint-config@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-0.4.0.tgz#faae31ef551af4faf9463eeaa8d8fdfb4f2ae55d"
+  integrity sha512-cMkwa7mTYOsd+BtHb6/FRoHVtvOTPatRXVtr58DMw0tzTBWXSSzLrmihg4YLprjQzMkdfA8XR6OQNLLTce4IBQ==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.1.0"
