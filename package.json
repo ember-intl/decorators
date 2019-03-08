@@ -30,7 +30,7 @@
     "ember-intl": "^4.0.0-beta.8"
   },
   "devDependencies": {
-    "@clark/eslint-config-ember-typescript": "^0.2.0",
+    "@clark/eslint-config-ember-typescript": "^0.4.0",
     "@clark/eslint-config-node": "^0.2.0",
     "@ember-decorators/babel-transforms": "5.1.4",
     "@ember/optional-features": "^0.7.0",
