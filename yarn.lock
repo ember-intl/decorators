@@ -4737,9 +4737,9 @@ ember-cli-typescript-blueprints@^2.0.0-beta.1:
     silent-error "^1.1.0"
 
 ember-cli-typescript@^2.0.0-rc.2:
-  version "2.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-typescript/-/ember-cli-typescript-2.0.0-rc.2.tgz#d8253097279ed292c20e739ee72f8fb994dbb6b7"
-  integrity sha512-u4mhdt/R0ip5s1H93aXtGJ/tnZ/3LsIOhKmaPylvlAVW/HtgPk+j/9sFHT4YmFUKMWPP2gXExtDkYNbz81XWzw==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli-typescript/-/ember-cli-typescript-2.0.1.tgz#9c46729213b9e1d13f5c3ff8421d772134aa889e"
+  integrity sha512-xwSEQOUNM621Wt+XJWpbLhBIeqC/dM1lDS+oZQ2nSjxp4MLZkpKuiVBqdbBWcURbvv8ghoVQPfy8wYU4JIFkLA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.1.0"
     "@babel/plugin-transform-typescript" "^7.1.0"
@@ -4750,7 +4750,7 @@ ember-cli-typescript@^2.0.0-rc.2:
     fs-extra "^7.0.0"
     resolve "^1.5.0"
     rsvp "^4.8.1"
-    semver "^5.5.1"
+    semver "^6.0.0"
     stagehand "^1.0.0"
     walk-sync "^1.0.0"
 
@@ -10666,6 +10666,11 @@ semver@5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
   integrity sha512-4SJ3dm0WAwWy/NVeioZh5AntkdJoWKxHxcmyP622fOkgHa4z3R0TdBJICINyaSDE6uNwVc8gZr+ZinwZAH4xIA==
+
+semver@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-6.0.0.tgz#05e359ee571e5ad7ed641a6eec1e547ba52dea65"
+  integrity sha512-0UewU+9rFapKFnlbirLi3byoOuhrSsli/z/ihNnvM24vgF+8sNBiI1LZPBSH9wJKUwaUbw+s3hToDLCXkrghrQ==
 
 semver@~5.3.0:
   version "5.3.0"
