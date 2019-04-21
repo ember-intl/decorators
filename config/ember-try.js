@@ -1,56 +1,6 @@
 'use strict';
 
 const getChannelURL = require('ember-source-channel-url');
-const flatMap = require('lodash.flatmap');
-const merge = require('lodash.merge');
-
-const withDecoratorVariants = scenarios =>
-  flatMap(scenarios, scenario => [
-    merge({}, scenario, {
-      name: `${scenario.name}-e-d-v3`,
-      npm: {
-        devDependencies: {
-          '@ember-decorators/babel-transforms': '^3.1.2'
-        },
-        dependencies: {
-          '@ember-decorators/utils': '^3.1.2'
-        }
-      }
-    }),
-    merge({}, scenario, {
-      name: `${scenario.name}-e-d-v4`,
-      npm: {
-        devDependencies: {
-          '@ember-decorators/babel-transforms': '^4.0.0'
-        },
-        dependencies: {
-          '@ember-decorators/utils': '^4.0.0'
-        }
-      }
-    }),
-    merge({}, scenario, {
-      name: `${scenario.name}-e-d-v5.1.2`,
-      npm: {
-        devDependencies: {
-          '@ember-decorators/babel-transforms': '5.1.2'
-        },
-        dependencies: {
-          '@ember-decorators/utils': '5.1.2'
-        }
-      }
-    }),
-    merge({}, scenario, {
-      name: `${scenario.name}-e-d-v5.1.4`,
-      npm: {
-        devDependencies: {
-          '@ember-decorators/babel-transforms': '5.1.4'
-        },
-        dependencies: {
-          '@ember-decorators/utils': '5.1.4'
-        }
-      }
-    })
-  ]);
 
 module.exports = function() {
   return Promise.all([
@@ -60,7 +10,7 @@ module.exports = function() {
   ]).then(urls => {
     return {
       useYarn: true,
-      scenarios: withDecoratorVariants([
+      scenarios: [
         {
           name: 'ember-lts-2.18',
           env: {
@@ -117,7 +67,7 @@ module.exports = function() {
             devDependencies: {}
           }
         }
-      ])
+      ]
     };
   });
 };
