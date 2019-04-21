@@ -27,10 +27,9 @@ branches:
 jobs:
   fail_fast: true
   allow_failures:
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v5.1.4
+    - env: EMBER_TRY_SCENARIO=ember-lts-2.18
+    - env: EMBER_TRY_SCENARIO=ember-lts-3.4
+    - env: EMBER_TRY_SCENARIO=ember-release
 
   include:
     # runs linting and tests with current locked deps
@@ -52,26 +51,11 @@ jobs:
     # we recommend new addons test the current and previous LTS
     # as well as latest stable release (bonus points to beta/canary)
     - stage: "Additional Tests"
-      env: EMBER_TRY_SCENARIO=ember-lts-2.18-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-lts-2.18-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-lts-2.18-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-lts-2.18-e-d-v5.1.4
-    - env: EMBER_TRY_SCENARIO=ember-lts-3.4-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-lts-3.4-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-lts-3.4-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-lts-3.4-e-d-v5.1.4
-    - env: EMBER_TRY_SCENARIO=ember-release-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-release-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-release-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-release-e-d-v5.1.4
-    - env: EMBER_TRY_SCENARIO=ember-beta-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-beta-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-beta-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-beta-e-d-v5.1.4
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v3
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v4
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v5.1.2
-    - env: EMBER_TRY_SCENARIO=ember-canary-e-d-v5.1.4
+      env: EMBER_TRY_SCENARIO=ember-lts-2.18
+    - env: EMBER_TRY_SCENARIO=ember-lts-3.4
+    - env: EMBER_TRY_SCENARIO=ember-release
+    - env: EMBER_TRY_SCENARIO=ember-beta
+    - env: EMBER_TRY_SCENARIO=ember-canary
 
     - stage: deploy
       name: "Release on npm & tag on GitHub"
