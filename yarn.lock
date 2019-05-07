@@ -719,12 +719,13 @@
     eslint-plugin-ember-best-practices "^1.1.1"
 
 "@clark/eslint-config-node@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.0.0.tgz#16debefa545078c2c7f5e45c8349f7cbd30b233a"
-  integrity sha512-0IXW2+7FSL3w+oAD1r3QODZ8ogxcBLmrZ+FSNmUP4W5B4FG8hRqoHel6RzNFtNtIu6BTx89Tj/X2idL36ceK5A==
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config-node/-/eslint-config-node-1.1.1.tgz#8f1d6827f4f27c1ebb633d75be9fa792d33a19a2"
+  integrity sha512-nFZyuooyzXJbpnP1oJHXFUYte2wIbmLGvdzjapMvnDHsRNKIAPWPJUUEmZLHqZVb/CKAnKgv7xh1xoorLb8vYA==
   dependencies:
-    "@clark/eslint-config" "^1.0.0"
+    "@clark/eslint-config" "^1.1.1"
     eslint-plugin-node "^9.0.1"
+    lodash.merge "^4.6.1"
 
 "@clark/eslint-config-typescript@^0.5.1":
   version "0.5.1"
@@ -749,10 +750,10 @@
     eslint-plugin-unicorn "^7.0.0"
     prettier "^1.16.4"
 
-"@clark/eslint-config@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.0.0.tgz#c422912c99b940e65594eabd48339fda012732f8"
-  integrity sha512-U3DGL3miNf/2FKnuWPX7bqf0NKghinJCSr2sG/8NV698yrFJfsZWRNPr2JZw/dPTuHIL/gtIaEoOXpQzeypLew==
+"@clark/eslint-config@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@clark/eslint-config/-/eslint-config-1.1.1.tgz#fd1f25bedfa966323f97f33994a1f70e527ffddb"
+  integrity sha512-Se5WKaEmuuEYl9efNE9VljKY7wzio1oBCa+yms5TRIwyzXKofIt1l47AcTHDEwOn/EzDHm8FVQzdhTNCuge7iw==
   dependencies:
     eslint-config-airbnb-base "^13.1.0"
     eslint-config-prettier "^4.2.0"
@@ -7975,7 +7976,7 @@ lodash.last@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash.last/-/lodash.last-3.0.0.tgz#242f663112dd4c6e63728c60a3c909d1bdadbd4c"
   integrity sha1-JC9mMRLdTG5jcoxgo8kJ0b2tvUw=
 
-lodash.merge@^4.3.1, lodash.merge@^4.6.0:
+lodash.merge@^4.3.1, lodash.merge@^4.6.0, lodash.merge@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
   integrity sha512-AOYza4+Hf5z1/0Hztxpm2/xiPZgi/cjMqdnKTUWTBSKchJlxXXuUSxCCl8rJlf4g6yww/j6mA8nC8Hw/EZWxKQ==
