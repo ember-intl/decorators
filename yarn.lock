@@ -4895,9 +4895,9 @@ ember-export-application-global@^2.0.0:
     ember-cli-babel "^6.0.0-beta.7"
 
 ember-intl@^4.0.0-beta.8:
-  version "4.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-4.0.0-beta.9.tgz#1852e501306940c057fd6e77552a225e2abdeeb1"
-  integrity sha512-zqp0GEsJRbc6kK9GZBOzXTtJT7Q2t5jfy5mO9BNj1CzyNtlId0u+hC61hUrUP/nvglLszPILQINI+e6j/uaNww==
+  version "4.0.0-beta.10"
+  resolved "https://registry.yarnpkg.com/ember-intl/-/ember-intl-4.0.0-beta.10.tgz#340263d91c7076c92743b4eb90618802f144136d"
+  integrity sha512-96wlInsaRBTZUcRpaN8W6jb6sODbjDwfbcVAOQXUAJrC4Q9y5Wn3FR/8rvK1NfyI4grCSY/uCZnCy+vMKbc7aQ==
   dependencies:
     "@ember-intl/broccoli-cldr-data" "^3.1.0"
     "@ember-intl/intl-messageformat" "^2.5.0"
