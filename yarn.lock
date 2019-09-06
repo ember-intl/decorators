@@ -901,9 +901,9 @@
     minimist "^1.2.0"
 
 "@ember-decorators/utils@^6.0.0":
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-6.1.0.tgz#3bfa930c7129cfcd3d803fb150aa4afb64ee5005"
-  integrity sha512-5uq65VnqxU0gMynI/C2vX4VrxLRwnuTgwvp0bWaJr62K+u6Rnb641MdtW5aDxzMli2C+r8f7SOHXMj10KB7ZcA==
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@ember-decorators/utils/-/utils-6.1.1.tgz#6b619814942b4fb3747cfa9f540c9f05283d7c5e"
+  integrity sha512-0KqnoeoLKb6AyoSU65TRF5T85wmS4uDn06oARddwNPxxf/lt5jQlh41uX3W7V/fWL9tPu8x1L1Vvpc80MN1+YA==
   dependencies:
     ember-cli-babel "^7.1.3"
 
