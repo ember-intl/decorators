@@ -59,7 +59,7 @@
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.4.1",
-    "ember-resolver": "^5.1.3",
+    "ember-resolver": "^6.0.0",
     "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/canary/shas/f0816d4b145d3c66cdbd0fa7cd5465120b6530bd.tgz",
     "ember-source-channel-url": "^2.0.1",
     "ember-template-lint": "^1.1.0",
