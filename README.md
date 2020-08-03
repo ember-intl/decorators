@@ -1,6 +1,6 @@
 # @ember-intl/decorators
 
-[![Build Status](https://travis-ci.com/ember-intl/decorators.svg)](https://travis-ci.com/ember-intl/decorators)
+[![CI](https://github.com/ember-intl/decorators/workflows/CI/badge.svg)](https://github.com/ember-intl/decorators/actions)
 [![npm version](https://badge.fury.io/js/@ember-intl%2Fdecorators.svg)](http://badge.fury.io/js/@ember-intl%2Fdecorators)
 [![Download Total](https://img.shields.io/npm/dt/@ember-intl%2Fdecorators.svg)](http://badge.fury.io/js/@ember-intl%2Fdecorators)
 [![Ember Observer Score](https://emberobserver.com/badges/-ember-intl-decorators.svg)](https://emberobserver.com/addons/@ember-intl/decorators)
