@@ -30,8 +30,8 @@
     "ember-intl": "^5.3.1"
   },
   "devDependencies": {
-    "@clark/eslint-config-ember-typescript": "^1.25.5",
-    "@clark/eslint-config-node": "^1.25.5",
+    "@clark/eslint-config-ember-typescript": "^1.26.4",
+    "@clark/eslint-config-node": "^1.26.4",
     "@ember/optional-features": "^1.0.0",
     "@semantic-release/commit-analyzer": "^8.0.1",
     "@semantic-release/git": "^9.0.0",
