@@ -2,6 +2,7 @@
 
 import { decoratorWithParams } from '@ember-decorators/utils/decorator';
 import { assert } from '@ember/debug';
+
 import { Service as IntlService, intl as intlMacro } from 'ember-intl';
 
 type GetterFn = (intl: IntlService, propertyKey: string) => any;
@@ -17,7 +18,7 @@ export default (decoratorWithParams(function intl<Target extends object>(
   delete desc.value;
   delete desc.initializer;
 
-  const cp = intlMacro(...dependentKeys, function(
+  const cp = intlMacro(...dependentKeys, function (
     intl: IntlService, // eslint-disable-line no-shadow
     propertyKey: string
   ) {
