@@ -61,11 +61,6 @@ jobs:
     - env: EMBER_TRY_SCENARIO=ember-beta
     - env: EMBER_TRY_SCENARIO=ember-canary
 
-    - stage: deploy
-      name: "Release on npm & tag on GitHub"
-      script:
-        - yarn run semantic-release
-
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - export PATH=$HOME/.yarn/bin:$PATH
