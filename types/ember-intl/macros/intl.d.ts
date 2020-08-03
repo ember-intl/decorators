@@ -1,4 +1,5 @@
 import ComputedProperty from '@ember/object/computed';
+
 import { Service as IntlService } from 'ember-intl';
 
 export const __intlInjectionName: string;

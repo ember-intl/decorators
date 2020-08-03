@@ -1,14 +1,17 @@
-import { module, test } from 'qunit';
 import { setupTest } from 'ember-qunit';
+import { module, test } from 'qunit';
+
+import { intl } from '@ember-intl/decorators';
 import { get, set } from '@ember/object';
 import { run } from '@ember/runloop';
-import { setupIntl } from 'ember-intl/test-support';
-import { intl } from '@ember-intl/decorators';
-import TestContext from '../test-context';
-import setupContainerObject from '../helper/setup-container-object';
-import IntlService from 'ember-intl/services/intl';
 
-module('Unit | @intl', function(hooks) {
+import IntlService from 'ember-intl/services/intl';
+import { setupIntl } from 'ember-intl/test-support';
+
+import setupContainerObject from '../helper/setup-container-object';
+import TestContext from '../test-context';
+
+module('Unit | @intl', function (hooks) {
   setupTest(hooks);
   setupIntl(hooks, {
     'no.interpolations': 'text with no interpolations',
@@ -16,7 +19,7 @@ module('Unit | @intl', function(hooks) {
   });
   setupContainerObject(hooks);
 
-  test('basic functionality', function(this: TestContext, assert) {
+  test('basic functionality', function (this: TestContext, assert) {
     class TestObject extends this.ContainerObject {
       amount = 1.23;
 
@@ -60,7 +63,7 @@ module('Unit | @intl', function(hooks) {
     );
   });
 
-  test('accepts arrow functions', function(this: TestContext, assert) {
+  test('accepts arrow functions', function (this: TestContext, assert) {
     assert.expect(4);
 
     const intlService = this.intl;
@@ -86,7 +89,7 @@ module('Unit | @intl', function(hooks) {
     );
   });
 
-  test('accepts methods', function(this: TestContext, assert) {
+  test('accepts methods', function (this: TestContext, assert) {
     assert.expect(4);
 
     const intlService = this.intl;
