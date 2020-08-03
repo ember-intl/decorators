@@ -5,7 +5,10 @@
   "keywords": [
     "ember-addon"
   ],
-  "repository": "ember-intl/decorators",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ember-intl/decorators.git"
+  },
   "license": "MIT",
   "author": "",
   "directories": {
