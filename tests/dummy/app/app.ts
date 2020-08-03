@@ -5,12 +5,11 @@ import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 import Resolver from './resolver';
 
-const App = Application.extend({
-  modulePrefix: config.modulePrefix,
-  podModulePrefix: config.podModulePrefix,
-  Resolver
-});
+export default class App extends Application {
+  modulePrefix = config.modulePrefix;
+  podModulePrefix = config.podModulePrefix;
+  // eslint-disable-next-line @typescript-eslint/naming-convention
+  Resolver = Resolver;
+}
 
 loadInitializers(App, config.modulePrefix);
-
-export default App;
