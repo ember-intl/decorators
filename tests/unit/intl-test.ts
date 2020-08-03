@@ -26,6 +26,7 @@ module('Unit | @intl', function (hooks) {
       currency = 'EUR';
 
       @intl('amount', 'currency')
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       formatted: string = (intlService: IntlService) =>
         intlService.formatNumber(this.amount, {

@@ -1,4 +1,4 @@
-/* eslint-disable no-param-reassign, prefer-destructuring */
+/* eslint-disable no-param-reassign, prefer-destructuring, @typescript-eslint/no-invalid-this */
 
 import { decoratorWithParams } from '@ember-decorators/utils/decorator';
 import { assert } from '@ember/debug';
@@ -7,6 +7,7 @@ import { Service as IntlService, intl as intlMacro } from 'ember-intl';
 
 type GetterFn = (intl: IntlService, propertyKey: string) => any;
 
+// eslint-disable-next-line func-names
 export default (decoratorWithParams(function intl<Target extends object>(
   target: Target,
   key: keyof Target,
@@ -31,8 +32,9 @@ export default (decoratorWithParams(function intl<Target extends object>(
     return fn.call(this, intl, propertyKey);
   });
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  return cp(target, key, desc);
+  return cp(target, key, desc) as PropertyDescriptor;
 }) as unknown) as ((
   ...args: Parameters<typeof intlMacro>
 ) => PropertyDecorator & MethodDecorator) &
