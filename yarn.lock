@@ -11701,9 +11701,9 @@ release-it-lerna-changelog@^3.0.0:
     which "^2.0.2"
 
 release-it@^14.0.1:
-  version "14.6.2"
-  resolved "https://registry.yarnpkg.com/release-it/-/release-it-14.6.2.tgz#dc5389c83d39a9a773968a03db5a0216c736102a"
-  integrity sha512-rjRe2cC59ueTUGS2rkwI5JEeN0DQlU2eeq4nrCQcwQXv5IzC+9uPd7EvoUT7VDwJ4ZNu1Oh8DZVQqrtDzVboUg==
+  version "14.6.3"
+  resolved "https://registry.yarnpkg.com/release-it/-/release-it-14.6.3.tgz#b190a3fe1d89436e4f6cd6c15e4fddf837c51d14"
+  integrity sha512-q7kTJFXcsHe+6H/g9z747dLrmZh0psoUeLHgFAdzdJ6rzqPRucoL6niROX8mCSkOQ0buYc8eQanDrejW94VRxQ==
   dependencies:
     "@iarna/toml" "2.2.5"
     "@octokit/rest" "18.5.3"
